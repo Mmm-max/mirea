@@ -1,6 +1,7 @@
 #include <iostream>
 
 
+// Порядок
 int main() {
     int n;
     std::cout << "Введите натуральное число: ";

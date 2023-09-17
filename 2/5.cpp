@@ -1,6 +1,7 @@
 #include <iostream> 
 
 
+// Табуляция
 int main() {
     double x, y;
     x = -4;

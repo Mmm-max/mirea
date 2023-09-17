@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-
+// Конус
 int main() {
     double R, r, l, h, s, v, p;
     p = 3.14;

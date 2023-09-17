@@ -1,6 +1,7 @@
 #include <iostream>
 
 
+// Разветвление
 int main() {
     double x, a;
     std::cout << "Введите x: ";

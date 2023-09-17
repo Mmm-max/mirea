@@ -1,6 +1,7 @@
 #include <iostream>
 
 
+// Функция
 int main() {
     double x, y, b, z;
 
