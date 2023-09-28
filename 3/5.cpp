@@ -1,11 +1,12 @@
 # include <iostream>
 # include <string>
+# include <fstream>
 
 using namespace std;
 
 
 string bubble(string s) {
-    string s = "cba";
+    // string s = "cba";
     char a, b;
     int l = s.length();
 
@@ -14,22 +15,29 @@ string bubble(string s) {
             if (s[j] > s[j + 1]) {
                 a = s[j];
                 b = s[j + 1];
-                cout << "check! " << i << " " << j << "\n";
+                // cout << "check! " << i << " " << j << "\n";
                 // s[j], s[j + 1] = s[j + 1], s[j];
                 s[j] = b;
                 s[j + 1] = a;
             }
         }
-    cout << "sorting... " << s << "\n";
+    // cout << "sorting... " << s << "\n";
     }
-    cout << "sorted: " << s << "\n";
+    // cout << "sorted: " << s << "\n";
     return s;
 }
 
 
 int main() {
-    // string s = "быва";
-    // cout << "start\n";
-    // cout << "answer " << bubble(s);
+    string s;
+    fstream myFile;
+    cout << "start\n";
+
+    myFile.open("code/c++/mirea_homework/3/5.txt");
+    while (getline (myFile, s)) {
+        cout << "enter_value: " <<  s << "\n";
+    }
+    myFile.close();
+    cout << "answer " << bubble(s);
 
 }
