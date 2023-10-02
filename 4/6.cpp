@@ -25,7 +25,7 @@ int main() {
         } else {
             answer += arabNumb[actual_index] * scale;
             scale = 1;
-            cout << "i: " << i << " index: " << actual_index << " scale: " << scale << " arabNumb: " << arabNumb[actual_index] << " romNumb: " << romNumb[actual_index] << " answer: " << answer << "\n";
+            // cout << "i: " << i << " index: " << actual_index << " scale: " << scale << " arabNumb: " << arabNumb[actual_index] << " romNumb: " << romNumb[actual_index] << " answer: " << answer << "\n";
         }
     }
 
