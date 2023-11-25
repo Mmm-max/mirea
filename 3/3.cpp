@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    ifstream myFile("code/c++/mirea_homework/3/3.txt");
+    ifstream myFile("/Users/eugensolopov/code/cpp/mirea_homework/3/3.txt");
     string line;
 
     // cout << "start checker \n";

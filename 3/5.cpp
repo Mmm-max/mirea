@@ -33,11 +33,13 @@ int main() {
     fstream myFile;
     cout << "start\n";
 
-    myFile.open("code/c++/mirea_homework/3/5.txt");
+    myFile.open("/Users/eugensolopov/code/cpp/mirea_homework/3/5.txt");
+    // cout << "file opened" << endl;
     while (getline (myFile, s)) {
-        cout << "enter_value: " <<  s << "\n";
+        // cout << "enter_value: " <<  s << "\n";
     }
+    cout << "string: " << s << endl;
     myFile.close();
-    cout << "answer " << bubble(s);
+    cout << "answer: " << bubble(s);
 
 }
