@@ -1,22 +1,29 @@
 #include <iostream>
-#include <cmath>
-
+#include <algorithm>
 using namespace std;
-
-int factorial(int n) {
-    if (n <= 1) {
-        return 1;
-    } else {
-        return n * factorial(n - 1);
-    }
-}
-int main() {
-    int answer;
-    for (size_t i = 9; i > 0; i--)
+bool perestanovka(int* urna, int n) 
+{
+    for (int i = 0; i < n; ++i)
     {
-        // cout << i << "\n";
-        answer += factorial(i);
+        if (urna[i] == i)
+        {
+            return true;
+        }
     }
-    cout << "answer: " << answer;
-    
+    return false;
+}
+
+int main() 
+{
+    int ans = 0,n=10, fac = 3628800;
+    int urna[10] = { 0,1,2,3,4,5,6,7,8,9 };
+    for (int i = 0; i < fac; ++i) 
+    {
+        next_permutation(urna, urna + n);
+        if (perestanovka(urna,n))
+            ans++;
+    }
+    cout << ans << endl;
+
+    return 0;
 }

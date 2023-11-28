@@ -1,23 +1,26 @@
-#include <iostream>
 #include <cmath>
-
-using namespace std;
-#define PI 3.141592
-
-void plot(double value)
-{
-    int spot = (value+1.0) * 10;
-    for (int i = 0; i < spot - 1; i++) {
-        cout << " ";
-    }
-    cout << "*\n";
-}
+#include <iostream>
 
 int main() {
-    for (double angle = 0.0; angle <= PI; angle += PI / 10) {
-        double value = sin(angle);
-        // cout << "angle" << "sin: " << value << " spot: " << (int)((value+1.0) * 10) << "\n";
-        plot(value);
+    const int width = 80;  // ширина консоли
+    const int height = 50; // высота консоли
+    const double pi = 3.141592653589793;
+
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+
+            double scaledX = (2 * pi) * (x / static_cast<double>(width));
+            int scaledY = (height / 2) * (1 - sin(scaledX));
+
+            if (y == scaledY) {
+                std::cout << "*";
+            } else {
+                std::cout << " ";
+            }
+
+        }
+        std::cout << "\n";
     }
+
     return 0;
 }
