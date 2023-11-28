@@ -4,10 +4,9 @@ using namespace std;
 
 
 int main() {
-    int a, b, c, n;
+    int a, b, c;
     cin >> a;
     cin >> b;
     cin >> c;
-    cin >> n;
     cout << "answer: " << (c - a) / b;
 }

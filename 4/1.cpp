@@ -6,18 +6,22 @@ using namespace std;
 
 
 int main() {
-    fstream myFile("code/c++/mirea_homework/4/1.txt");
+    fstream myFile("/Users/eugensolopov/code/cpp/mirea_homework/4/1.txt");
     string s;
-    int answer = 0;
+    float answer = 0;
     bool status;
+    float n;
 
     for (int i = 1; i < 11; i++) {
-        myFile << i << "\n";
+        cin >> n;
+        cout << "test " << i << ": " << n << "\n";
+        myFile << n << "\n";
     }
     myFile.close();
 
-    myFile.open("code/c++/mirea_homework/4/1.txt");
+    myFile.open("/Users/eugensolopov/code/cpp/mirea_homework/4/1.txt");
     while (getline (myFile, s)) {
+        cout << "n: " << stoi(s) << endl;
         answer += stoi(s);
     }
 

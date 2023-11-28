@@ -11,6 +11,7 @@ int main() {
     string romNumb = "IVXLCDM";
     vector<int> arabNumb = {1, 5, 10, 50, 100, 500, 1000};
 
+    cout << "Декодер из римских цифр - введите число n: "; 
     cin >> wod;
     l = wod.length();
     answer = 0;
