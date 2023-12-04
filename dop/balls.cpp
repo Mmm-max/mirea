@@ -1,3 +1,4 @@
+#include <cstdio>
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -24,6 +25,5 @@ int main()
             ans++;
     }
     cout << ans << endl;
-
     return 0;
 }

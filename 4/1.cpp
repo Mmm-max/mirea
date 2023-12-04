@@ -20,7 +20,7 @@ int main() {
     myFile.close();
 
     myFile.open("/Users/eugensolopov/code/cpp/mirea_homework/4/1.txt");
-    while (getline (myFile, s)) {
+    while (getline (myFile, n)) {
         cout << "n: " << stoi(s) << endl;
         answer += stoi(s);
     }

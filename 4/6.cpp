@@ -1,3 +1,5 @@
+// Автоматный распознаватель
+
 #include <iostream>
 #include <vector>
 
